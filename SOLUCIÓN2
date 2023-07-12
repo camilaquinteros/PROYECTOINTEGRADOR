@@ -1,0 +1,8 @@
+#include <stdio.h>
+#include <string.h>
+
+struct empleado {
+    char nombre[20];
+    int horasTrabajadas;
+    int horasExtra;
+};
