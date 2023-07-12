@@ -15,3 +15,19 @@ float calcularSueldo(struct empleado emp) {
     return sueldo;
 }
 
+int main() {
+    struct empleado emp;
+    printf("Ingrese el nombre del empleado: ");
+    scanf("%s", emp.nombre);
+    printf("Ingrese las horas trabajadas durante el mes: ");
+    scanf("%d", &emp.horasTrabajadas);
+    printf("Ingrese las horas extra trabajadas: ");
+    scanf("%d", &emp.horasExtra);
+
+    float sueldo = calcularSueldo(emp);
+
+    printf("Nombre:%s;Horas trabajadas:%d;Horas extra trabajadas:%d;Sueldo mensual:$%.2f;", emp.nombre, emp.horasTrabajadas, emp.horasExtra, sueldo);
+
+    return 0;
+}
+
